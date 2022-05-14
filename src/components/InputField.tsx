@@ -15,7 +15,7 @@ const InputField: React.FC<Props> = ({todo, settodo, handleAdd}) => {
       handleAdd(e)
       inputRef.current?.blur();
       }}>
-      <input ref={inputRef} type="text" value={todo} onChange={(e) => settodo(e.target.value)} placeholder="Enter a text" className="input__box" />
+      <input ref={inputRef} type="text" value={todo} onChange={(e) => settodo(e.target.value)} placeholder="Enter a task" className="input__box" />
       <button className="input__submit" type="submit">Go</button>
     </form>
   )
